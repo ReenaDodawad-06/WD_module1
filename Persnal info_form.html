@@ -1,30 +1,50 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Advanced tags </title>
+    <title>Personal Information Form</title>
 </head>
 <body>
-<h1> Personal Information </h1>
-<form>
-    <label> S.No. </label>
-    <input type = "number">
- <br>
- <br>
-    <label>Name </label>
-    <input type= "text">
- <br>
- <br>
-    <label> Age </label>
-    <input type= "text">
- <br>
- <br>
-    <label>Email</label>
-    <input type= "text">
- <br>
- <br>
-    <label>Nationality</label>
-    <input type= "Indian" "NRI">
-    <input type= "submit">
-</form>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="" disabled selected>Select your nationality</option>
+                <option value="indian">Indian</option>
+               <option value="NRI">NRI</option>
+                <!-- Add other options as needed -->
+            </select><br><br>
+
+            <label for="about">Tell me about yourself:</label><br>
+            <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 </body>
-</head>
 </html>
