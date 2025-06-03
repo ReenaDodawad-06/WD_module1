@@ -1,0 +1,38 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    animation: Animationball 10s linear 1s infinite;
+}
+@keyframes Animationball
+{
+    20%
+    {
+        transform: translate(0, 0);
+        transform: scale(1);
+    }
+    40%
+    {
+        transform: translate(1000px, 0px);
+        transform: scale(2);
+    }
+    60%
+    {
+        transform: translate(1000px, 300px);
+        transform: scale(3);
+    }       
+    80%
+    {
+        transform: translate(0px, 300px);
+        transform: scale(2);
+    }
+    100%
+    {
+        transform: translate(0px, 0px);
+        transform: scale(1);
+    }
+
+    
+}
